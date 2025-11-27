@@ -1,16 +1,79 @@
-# React + Vite
+# Hub de Ferramentas Úteis 🛠️
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este projeto é um *Hub* moderno e responsivo, desenvolvido em React com Vite, que reúne diversas ferramentas e utilitários cotidianos em uma única interface. Ele foi criado com foco na usabilidade, persistência de dados (Histórico) e na personalização com temas claro e escuro.
 
-Currently, two official plugins are available:
+## 🔗 Status do Projeto & Acesso
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+| Detalhe | Status |
+| :--- | :--- |
+| **Status do Deploy** | ![Status do GitHub Pages](https://github.com/Xaropinhodlc/Hub-de-Ferramentas-React/actions/workflows/main.yml/badge.svg) |
+| **Link do Site** | [Acesse o Hub de Ferramentas aqui!](https://Xaropinhodlc.github.io/Hub-de-Ferramentas-React) |
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## ✨ Funcionalidades Incluídas
 
-## Expanding the ESLint configuration
+O Hub de Ferramentas é dividido em componentes, cada um com sua utilidade específica e histórico de cálculos:
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### 1. ⚖️ Calculadora de IMC (Índice de Massa Corporal)
+
+* Calcula o IMC com base no peso e altura.
+* Fornece a classificação (Abaixo do Peso, Normal, Obesidade, etc.).
+* **Melhorias customizadas:** Suporte à tecla `Enter` e desabilitação do botão quando os campos estão vazios.
+
+### 💱 Conversor de Moedas (BRL)
+
+* Converte moedas principais (USD, EUR, JPY, etc.) para Real (BRL).
+* Consome a cotação em tempo real de uma API (AwesomeAPI).
+* **Melhorias customizadas:** Suporte à tecla `Enter` para iniciar a conversão.
+
+### 3. 📊 Calculadora de Porcentagem
+
+* Permite dois tipos de cálculo:
+    * "Quanto é X% de Y?"
+    * "X é qual porcentagem de Y?"
+* **Melhorias customizadas:** Desabilitação dos botões de cálculo se os campos estiverem vazios.
+
+### 4. 📈 Calculadora de Juros Compostos
+
+* Simula o crescimento de investimentos ao longo do tempo.
+* Calcula o montante final, juros ganhos e total investido, considerando:
+    * Capital Inicial.
+    * Taxa de Juros Anual.
+    * Período de Aplicação (Anos).
+    * Aporte Mensal (Opcional).
+* **Melhorias customizadas:** Desabilitação do botão de cálculo se os campos obrigatórios estiverem vazios.
+
+## 💻 Tecnologias Utilizadas
+
+* **Front-end Framework:** React (Hooks: `useState`, `useCallback`, `useEffect`).
+* **Build Tool:** Vite.
+* **Estilização:** Styled Components (para modularidade e suporte a temas).
+* **Roteamento:** React Router DOM (v6).
+* **API:** AwesomeAPI (para cotações de moeda).
+* **Deployment:** GitHub Pages e `gh-pages` CLI.
+* **Hooks Customizados:** `useLocalStorage` para persistência do histórico.
+
+## 🚀 Como Executar o Projeto Localmente
+
+Para clonar e rodar o Hub de Ferramentas em sua máquina, siga os passos abaixo:
+
+### Pré-requisitos
+
+* Node.js (LTS)
+* Git
+
+### Instalação
+
+```bash
+# 1. Clone o repositório
+git clone [https://github.com/Xaropinhodlc/Hub-de-Ferramentas-React.git](https://github.com/Xaropinhodlc/Hub-de-Ferramentas-React.git)
+
+# 2. Acesse a pasta do projeto
+cd Hub-de-Ferramentas-React
+
+# 3. Instale as dependências
+npm install
+
+# 4. Inicie o servidor de desenvolvimento (Vite)
+npm run dev
