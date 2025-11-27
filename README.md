@@ -6,7 +6,6 @@ Este projeto é um *Hub* moderno e responsivo, desenvolvido em React com Vite, q
 
 | Detalhe | Status |
 | :--- | :--- |
-| **Status do Deploy** | ![Status do GitHub Pages](https://github.com/Xaropinhodlc/Hub-de-Ferramentas-React/actions/workflows/main.yml/badge.svg) |
 | **Link do Site** | [Acesse o Hub de Ferramentas aqui!](https://Xaropinhodlc.github.io/Hub-de-Ferramentas-React) |
 
 ---
@@ -77,3 +76,9 @@ npm install
 
 # 4. Inicie o servidor de desenvolvimento (Vite)
 npm run dev
+
+🤝 Contribuições
+Contribuições são bem-vindas! Se você encontrou um bug ou tem uma ideia para uma nova ferramenta, sinta-se à vontade para abrir uma Issue ou enviar um Pull Request.
+
+🔑 Licença
+Este projeto está sob a licença MIT.
